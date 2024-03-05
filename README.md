@@ -20,6 +20,6 @@
 
 🚀 Fast Update - **Alysse x Krypton will update when Roblox dropped its new version!**
 
-**<:alysse:1177969463103062078> Expect to experience another level of EXPLOITING when using Alysse x Krypton**
+**Expect to experience another level of EXPLOITING when using Alysse x Krypton**
 
 You can experience all of this for 0$ meaning its **FREE!** and **POWERFUL**
