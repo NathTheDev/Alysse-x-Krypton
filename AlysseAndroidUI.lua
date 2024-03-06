@@ -1402,6 +1402,8 @@ local function WVUHU_fake_script() -- main.LocalScript
 
 	print("Welcome, "..game.Players.LocalPlayer.Name.. " to Alysse!")
 	
+	mainframe.Draggable = true
+	
 	local mainframe = script.Parent
 	local sidebar = mainframe.sidebar
 	local tabsfolder = mainframe.tabs
