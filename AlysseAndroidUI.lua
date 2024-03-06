@@ -137,3 +137,19 @@ coroutine.wrap(TFBEZRK_fake_script)()
 function identifyexecutor()
     return "Alysse BETA"
 end
+
+function writefile()
+    print("file not implemented")
+end
+
+function readfile()
+    print("file not implemented")
+end
+
+function appendfile()
+    print("file not implemented")
+end
+
+function isfile()
+    print("file not implemented")
+end
