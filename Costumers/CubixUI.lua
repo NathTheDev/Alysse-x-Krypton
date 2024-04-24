@@ -2,6 +2,16 @@
 print("cubix hacked by ethos + alysse team. - shehajeez")
 
 -- [[ Init Script ]] --
+local execname = identifyexecutor();
+
+local identifier = {
+    Alysse = "Alysse-Fingerprint",
+    Tsuo = "Tsuo-Fingerprint",
+    Cubix = "Phantom-Fingerprint"
+}
+
+local cheatidentity = identifier[execname];
+
 getgenv().require = function(x)
     if typeof(x) ~= "Instance" or x.ClassName ~= "ModuleScript" then
         error("ModuleScript expected", 2)
