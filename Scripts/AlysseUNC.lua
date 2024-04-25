@@ -50,8 +50,29 @@ genv.base64 = {
 crypt.base64 = base64
 crypt.base64encode = base64encode
 crypt.base64decode = base64decode
+crypt.base64_encode = base64encode
+crypt.base64_decode = base64decode
+base64_encode = base64encode
+base64_decode = base64decode
+
 
 setreadonly(crypt, true)
+
+genv.console = {
+    consoleprint = rconsoleprint,
+    consoleinput = rconsoleinput,
+    consoledestroy = rconsoledestroy,
+    consolecreate = rconsolecreate,
+    consoleclear = rconsoleclear,
+    consolesettitle = rconsolesettitle
+}
+
+consoleprint = rconsoleprint
+consoleinput = rconsoleinput
+consoledestroy = rconsoledestroy
+consolecreate = rconsolecreate
+consoleclear = rconsoleclear
+consolesettitle = rconsolesettitle
 
 do
 	local aliasData = {
