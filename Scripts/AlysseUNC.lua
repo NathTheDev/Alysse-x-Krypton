@@ -19,6 +19,12 @@ genv.newlclosure = _newcc(function(cl)
 	end
 end)
 
+getgenv().dumpstring = function(p1)
+    return "\\" .. p1:gsub(".", function(c)
+        return "\\" .. string.byte(c)
+    end)
+end
+
 getgenv().getscriptclosure = function(targetScript)
     for _, regEntry in pairs(getreg()) do
         if type(regEntry) == "table" then
