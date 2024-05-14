@@ -1,7 +1,7 @@
 warn("Powered by Alysse Android")
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Alysse Android"; -- the title (ofc)
-	Text = "Mystik said to reactive"; -- what the text says (ofc)
+	Title = "Frostware Android"; -- the title (ofc)
+	Text = "Powered by Alysse"; -- what the text says (ofc)
 	Icon = ""; -- the image if u want. 
 	Duration = 5; -- how long the notification should in secounds
 })
