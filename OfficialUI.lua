@@ -33,7 +33,7 @@ vv                                                          vvv
            dP__Yb  88  .o   8P   o.`Y8b o.`Y8b 88""   
           dP""""Yb 88ood8  dP    8bodP' 8bodP' 888888 
 
---]]
+]]--
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/Alysse-x-Krypton/main/Scripts/AlysseUNC.lua"))()
 wait(1)
