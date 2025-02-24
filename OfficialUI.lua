@@ -464,8 +464,7 @@ Clear.Text = "Clear"
 Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clear.TextSize = 14.000
 Clear.MouseButton1Click:Connect(function()
-	local scriptText = TextBox.Text
-	scriptText = ""
+	TextBox.Text = ""
 end)
 
 CopyFrame.Name = "CopyFrame"
@@ -523,8 +522,7 @@ Paste.Text = "Paste"
 Paste.TextColor3 = Color3.fromRGB(255, 255, 255)
 Paste.TextSize = 14.000
 Paste.MouseButton1Click:Connect(function()
-	local scriptText = TextBox.Text
-	scriptText = getclipboard()
+	TextBox.Text = getclipboard()
 end)
 
 Toggle.Name = "Toggle"
