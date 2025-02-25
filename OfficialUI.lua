@@ -3,6 +3,10 @@ if _G.alysseloaded then
 	return
 end
 
+setreadonly(client, false);
+client.enableautoexec()
+setreadonly(client, true);
+
 local Alysse = Instance.new("ScreenGui")
 local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
