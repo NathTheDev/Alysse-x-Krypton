@@ -395,12 +395,19 @@ TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
 TextBox.MultiLine = true
 TextBox.PlaceholderText = "-- The greatest comeback of all time."
-TextBox.Text = ""
+TextBox.Text = isfile('AlysseContent.lua') and readfile('AlysseContent.lua')
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 10.000
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextBox:GetPropertyChangedSignal('Text'):Connect(function()
+    writefile('AlysseContent.lua', tostring(TextBox.Text))
+    local tab = {}
+    for i = 1, (#TextBox.Text:split('\n')) do
+        table.insert(tab, tostring(i))
+    end
+end)
 
 ExecuteFrame.Name = "ExecuteFrame"
 ExecuteFrame.Parent = CheatFrame
